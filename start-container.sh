@@ -10,7 +10,7 @@ sudo docker run -itd \
 	--net=hadoop \
 	-p 50070:50070 \
 	-p 8088:8088 \
-	-p 9000:9000 \
+	-p 8020:8020 \
 	--name hadoop-master \
 	--hostname hadoop-master \
 	chen2438/hadoop:jdk8 &>/dev/null
@@ -22,6 +22,7 @@ while [ $i -lt $N ]; do
 	echo "start hadoop-slave$i container..."
 	sudo docker run -itd \
 		--net=hadoop \
+		-p 50010:50010 \
 		--name hadoop-slave$i \
 		--hostname hadoop-slave$i \
 		chen2438/hadoop:jdk8 &>/dev/null
