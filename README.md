@@ -12,13 +12,13 @@
 ##### 1. pull docker image
 
 ```
-sudo docker pull kiwenlau/hadoop:1.0
+sudo docker pull chen2438/hadoop:jdk8
 ```
 
 ##### 2. clone github repository
 
 ```
-git clone https://github.com/kiwenlau/hadoop-cluster-docker
+git clone https://github.com/chen2438/hadoop-cluster-docker
 ```
 
 ##### 3. create hadoop network
